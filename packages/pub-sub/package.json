@@ -1,6 +1,6 @@
 {
   "name": "@likun./pubsub",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🍉 A lib for publish-subscribe design pattern.",
   "keywords": [
     "pubsub",
