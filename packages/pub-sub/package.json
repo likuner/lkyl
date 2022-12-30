@@ -1,6 +1,6 @@
 {
   "name": "@likun./pubsub",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🍉 A lib for publish-subscribe design pattern.",
   "keywords": [
     "pubsub",
@@ -20,6 +20,7 @@
     "url": "https://github.com/likuner/lkyl.git",
     "directory": "packages/pub-sub"
   },
+  "homepage": "https://github.com/likuner/lkyl/tree/main/packages/pub-sub#readme",
   "author": "Hunter",
   "license": "MIT",
   "devDependencies": {
