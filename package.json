@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.21.0",
+  "scripts": {
+    "build:crt": "pnpm --filter='@lkyl/*' build",
+    "build:crt:test": "pnpm --filter='@lkyl/*' build:test",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix"
+  }
+}
