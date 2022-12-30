@@ -2,9 +2,12 @@
   "private": true,
   "packageManager": "pnpm@7.21.0",
   "scripts": {
-    "build:crt": "pnpm --filter='@lkyl/create-react-template' build",
-    "build:pubsub": "pnpm --filter='@lkyl/pubsub' build",
+    "build:crt": "pnpm --filter='@likun./create-react-template' build",
+    "build:pubsub": "pnpm --filter='@likun./pubsub' build",
     "lint": "eslint . --ext .ts,.js",
     "lint:fix": "eslint . --ext .ts,.js --fix"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
