@@ -9,7 +9,7 @@ module.exports = (env) => {
     entry: './src/index.ts',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'index.min.js',
+      filename: 'index.js',
       library: {
         name: `${name.split('/').pop()}Lib`,
         type: 'umd'

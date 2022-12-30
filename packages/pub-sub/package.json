@@ -9,7 +9,7 @@
     "emit",
     "design pattern"
   ],
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "webpack --env prod --config webpack.config.js --progress",
