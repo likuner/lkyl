@@ -1,12 +1,16 @@
 {
   "name": "@likun./create-react-template",
-  "version": "1.0.0-beta4",
+  "version": "1.0.0-beta5",
   "description": "A cli to create react app.",
   "keywords": [
     "create-react-template"
   ],
   "main": "index.js",
   "types": "dist/types/index.d.ts",
+  "bin": {
+    "create-react-template": "index.js",
+    "crt": "index.js"
+  },
   "scripts": {
     "build": "webpack --env prod --config webpack.config.js --progress",
     "build:test": "webpack --config webpack.config.js --progress"
