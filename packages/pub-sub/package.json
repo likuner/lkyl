@@ -23,6 +23,9 @@
   "homepage": "https://github.com/likuner/lkyl/tree/main/packages/pub-sub#readme",
   "author": "Hunter",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
