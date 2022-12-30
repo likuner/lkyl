@@ -1,2 +1,3 @@
-# PubSub
-A lib for publish-subscribe design pattern.
+# create-react-template
+
+🚀 A cli to create react template.
