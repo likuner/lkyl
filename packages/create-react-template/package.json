@@ -1,6 +1,6 @@
 {
   "name": "@likun./create-react-template",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "A cli to create react app.",
   "keywords": [
     "create-react-template"
@@ -8,7 +8,7 @@
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "bin": {
-    "create-react-template": "index.js",
+    "create-react-template1": "index.js",
     "crt": "index.js"
   },
   "scripts": {
