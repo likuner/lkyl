@@ -1,5 +1,5 @@
 /*!
  * @likun./create-react-template
  * version: 1.0.0
- * 2022/12/30 21:01:46
- */(()=>{"use strict";(()=>{class e{constructor(){this.events=new Map,this.onceEvents=new Map}static getInstance(){return e.instance||(e.instance=new e),e.instance}on(e,t){this.events.has(e)||this.events.set(e,[]),this.events.get(e).push(t)}off(e,t){const s=this.events.get(e);(null==s?void 0:s.length)&&s.splice(0,s.length,...s.filter((e=>e!==t)));const n=this.onceEvents.get(e);(null==n?void 0:n.length)&&n.splice(0,n.length,...n.filter((e=>e!==t)))}once(e,t){this.onceEvents.has(e)||this.onceEvents.set(e,[]),this.onceEvents.get(e).push(t)}emit(e,...t){Promise.resolve().then((()=>{const s=this.events.get(e)||[],n=this.onceEvents.get(e)||[],i=[...s,...n];if(i.length)for(let e=0,s=i.length;e<s;e++)i[e].apply(this,t);n.length&&n.splice(0)}))}clear(){this.events.clear(),this.onceEvents.clear()}}e.instance=null})()})();
+ * 2022/12/30 21:42:24
+ */(()=>{"use strict";console.log("loading")})();
