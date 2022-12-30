@@ -7,6 +7,7 @@ importers:
 
   packages/create-react-template:
     specifiers:
+      '@types/node': ^18.11.18
       '@typescript-eslint/eslint-plugin': ^5.47.0
       '@typescript-eslint/parser': ^5.47.0
       eslint: ^8.30.0
@@ -17,12 +18,37 @@ importers:
       webpack: ^5.75.0
       webpack-cli: ^5.0.1
     devDependencies:
+      '@types/node': 18.11.18
       '@typescript-eslint/eslint-plugin': 5.47.1_txmweb6yn7coi7nfrp22gpyqmy
       '@typescript-eslint/parser': 5.47.1_lzzuuodtsqwxnvqeq4g4likcqa
       eslint: 8.30.0
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       ts-loader: 9.4.2_3fkjkrd3audxnith3e7fo4fnxi
-      ts-node: 10.9.1_typescript@4.9.4
+      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
+      typescript: 4.9.4
+      webpack: 5.75.0_webpack-cli@5.0.1
+      webpack-cli: 5.0.1_webpack@5.75.0
+
+  packages/pub-sub:
+    specifiers:
+      '@types/node': ^18.11.18
+      '@typescript-eslint/eslint-plugin': ^5.47.0
+      '@typescript-eslint/parser': ^5.47.0
+      eslint: ^8.30.0
+      terser-webpack-plugin: ^5.3.6
+      ts-loader: ^9.4.2
+      ts-node: ^10.9.1
+      typescript: ^4.9.4
+      webpack: ^5.75.0
+      webpack-cli: ^5.0.1
+    devDependencies:
+      '@types/node': 18.11.18
+      '@typescript-eslint/eslint-plugin': 5.47.1_txmweb6yn7coi7nfrp22gpyqmy
+      '@typescript-eslint/parser': 5.47.1_lzzuuodtsqwxnvqeq4g4likcqa
+      eslint: 8.30.0
+      terser-webpack-plugin: 5.3.6_webpack@5.75.0
+      ts-loader: 9.4.2_3fkjkrd3audxnith3e7fo4fnxi
+      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
       typescript: 4.9.4
       webpack: 5.75.0_webpack-cli@5.0.1
       webpack-cli: 5.0.1_webpack@5.75.0
@@ -1544,7 +1570,7 @@ packages:
       webpack: 5.75.0_webpack-cli@5.0.1
     dev: true
 
-  /ts-node/10.9.1_typescript@4.9.4:
+  /ts-node/10.9.1_awa2wsr5thmg3i7jqycphctjfq:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -1563,6 +1589,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
+      '@types/node': 18.11.18
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3

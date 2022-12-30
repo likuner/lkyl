@@ -1,23 +1,27 @@
 {
-  "name": "@lkyl/create-react-template",
-  "version": "1.0.0",
-  "description": "A cli to create react app.",
+  "name": "@lkyl/pubsub",
+  "version": "1.0.0-beta1",
+  "description": "🍉 A lib for publish-subscribe design pattern.",
   "keywords": [
-    "create-react-template"
+    "pubsub",
+    "publish-subscribe",
+    "events",
+    "emit",
+    "design pattern"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "webpack --env prod --config webpack.config.js --progress",
     "build:test": "webpack --config webpack.config.js --progress"
   },
-  "author": "Hunter",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/likuner/lkyl.git",
-    "directory": "packages/create-react-template"
+    "url": "https://github.com/likuner/lkyl.git",
+    "directory": "packages/pub-sub"
   },
+  "author": "Hunter",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
