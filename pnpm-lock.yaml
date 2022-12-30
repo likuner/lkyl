@@ -3,52 +3,45 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
-
-  packages/create-react-template:
     specifiers:
       '@types/node': ^18.11.18
       '@typescript-eslint/eslint-plugin': ^5.47.0
       '@typescript-eslint/parser': ^5.47.0
       eslint: ^8.30.0
-      terser-webpack-plugin: ^5.3.6
-      ts-loader: ^9.4.2
       ts-node: ^10.9.1
       typescript: ^4.9.4
-      webpack: ^5.75.0
-      webpack-cli: ^5.0.1
     devDependencies:
       '@types/node': 18.11.18
       '@typescript-eslint/eslint-plugin': 5.47.1_txmweb6yn7coi7nfrp22gpyqmy
       '@typescript-eslint/parser': 5.47.1_lzzuuodtsqwxnvqeq4g4likcqa
       eslint: 8.30.0
+      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
+      typescript: 4.9.4
+
+  packages/create-react-template:
+    specifiers:
+      terser-webpack-plugin: ^5.3.6
+      ts-loader: ^9.4.2
+      typescript: ^4.9.4
+      webpack: ^5.75.0
+      webpack-cli: ^5.0.1
+    devDependencies:
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       ts-loader: 9.4.2_3fkjkrd3audxnith3e7fo4fnxi
-      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
       typescript: 4.9.4
       webpack: 5.75.0_webpack-cli@5.0.1
       webpack-cli: 5.0.1_webpack@5.75.0
 
   packages/pub-sub:
     specifiers:
-      '@types/node': ^18.11.18
-      '@typescript-eslint/eslint-plugin': ^5.47.0
-      '@typescript-eslint/parser': ^5.47.0
-      eslint: ^8.30.0
       terser-webpack-plugin: ^5.3.6
       ts-loader: ^9.4.2
-      ts-node: ^10.9.1
       typescript: ^4.9.4
       webpack: ^5.75.0
       webpack-cli: ^5.0.1
     devDependencies:
-      '@types/node': 18.11.18
-      '@typescript-eslint/eslint-plugin': 5.47.1_txmweb6yn7coi7nfrp22gpyqmy
-      '@typescript-eslint/parser': 5.47.1_lzzuuodtsqwxnvqeq4g4likcqa
-      eslint: 8.30.0
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       ts-loader: 9.4.2_3fkjkrd3audxnith3e7fo4fnxi
-      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
       typescript: 4.9.4
       webpack: 5.75.0_webpack-cli@5.0.1
       webpack-cli: 5.0.1_webpack@5.75.0
