@@ -6,11 +6,15 @@ const { name, version } = require('./package.json')
 module.exports = (env) => {
   const { prod } = env
   return {
+    target: 'node',
     entry: './src/index.ts',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'index.js',
-      chunkFilename: '[name].js',
+      filename: (pathData) => {
+        return pathData.chunk.name === 'main'
+          ? 'index.js'
+          : 'js/[name].[contenthash].js';
+      },
       clean: true
     },
     mode: prod ? 'production' : 'development',

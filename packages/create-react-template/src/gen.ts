@@ -1,5 +1,5 @@
 import fse from 'fs-extra'
-import path from 'node:path'
+import path from 'path'
 import chalk from 'chalk'
 
 export function resolvePath(...paths: string[]) {
