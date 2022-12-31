@@ -1,6 +1,6 @@
 {
   "name": "@likun./create-react-template",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-rc",
   "description": "A cli to create react app.",
   "keywords": [
     "create-react-template"
