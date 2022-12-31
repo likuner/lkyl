@@ -12,7 +12,7 @@ export const currentDir = (function () {
 
 export function gen(name: string, { template }: Record<string, string>) {
   fse.copy(
-    resolvePath('templates/react-ts-template'),
-    resolvePath(currentDir())
+    resolvePath('../templates/react-ts-template'),
+    resolvePath(currentDir(), name)
   )
 }
