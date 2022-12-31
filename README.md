@@ -1,2 +1,3 @@
 # lkyl
-🔥 Just a project.
+
+🔥 A monorepo based on pnpm.
