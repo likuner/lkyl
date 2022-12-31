@@ -9,8 +9,6 @@ program
   .parse()
 
 
-console.log(process.cwd(), 'cwd')
-
 
 
 
