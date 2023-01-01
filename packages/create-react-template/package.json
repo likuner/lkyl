@@ -1,9 +1,13 @@
 {
   "name": "@likun./create-react-template",
-  "version": "1.0.3",
-  "description": "A cli to create react app.",
+  "version": "1.0.4",
+  "description": "🚀 A cli to create react template.",
   "keywords": [
-    "create-react-template"
+    "create",
+    "react",
+    "template",
+    "cli",
+    "project"
   ],
   "main": "index.js",
   "types": "dist/types/index.d.ts",

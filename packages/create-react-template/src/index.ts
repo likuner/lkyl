@@ -3,8 +3,8 @@ import { gen } from './gen'
 
 program
   .argument('[name]', 'project name', 'react-ts-template')
-  .option('-t, --template <string>', 'Input a template')
-  .description('Create a react project template')
+  // .option('-t, --template <string>', 'Input a template')
+  .description('Create a react project template.')
   .action((name, opts) => gen(name))
   .parse()
 

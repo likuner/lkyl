@@ -1,9 +1,9 @@
 import React from 'react'
 import { observer } from 'mobx-react'
 import styles from './index.module.less'
-import logo from '../../assets/logo.png'
 import { Alert, Image, Input, Space } from 'antd'
-import words from '../../store/words'
+import words from '@/store/words'
+import logo from '@/assets/logo.png'
 
 const Home: React.FC = () => {
 

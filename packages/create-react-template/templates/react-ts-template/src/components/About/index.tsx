@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Result, Space, Typography } from 'antd'
-import { useWeek } from '../../hooks/useWeek'
+import { useWeek } from '@/hooks/useWeek'
 
 const { Text } = Typography
 
