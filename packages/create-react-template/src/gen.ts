@@ -2,16 +2,16 @@ import fse from 'fs-extra'
 import path from 'path'
 import logger from './logger'
 
-export function resolvePath(...paths: string[]) {
+export const resolvePath = (...paths: string[]) => {
   return path.resolve(__dirname, ...paths)
 }
 
-export const currentDir = (function () {
+export const currentDir = (() => {
   const cwd = process.cwd()
   return (): string => cwd
 })()
 
-export function gen(name: string) {
+export const gen = (name: string) => {
   const dest = resolvePath(currentDir(), name)
   const exist = fse.existsSync(dest)
   if (exist) {
