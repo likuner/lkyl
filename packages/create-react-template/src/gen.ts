@@ -1,6 +1,5 @@
 import fse from 'fs-extra'
 import path from 'path'
-import chalk from 'chalk'
 import logger from './logger'
 
 export function resolvePath(...paths: string[]) {
