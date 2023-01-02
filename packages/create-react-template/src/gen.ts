@@ -1,6 +1,7 @@
 import fse from 'fs-extra'
 import path from 'path'
 import chalk from 'chalk'
+import logger from './logger'
 
 export function resolvePath(...paths: string[]) {
   return path.resolve(__dirname, ...paths)
@@ -12,12 +13,22 @@ export const currentDir = (function () {
 })()
 
 export function gen(name: string) {
+  const dest = resolvePath(currentDir(), name)
+  const exist = fse.existsSync(dest)
+  if (exist) {
+    logger.error(`path ${dest} already exists`)
+    return
+  }
   fse.copy(
     resolvePath('../templates/react-ts-template'),
-    resolvePath(currentDir(), name)
+    dest,
+    {
+      overwrite: false,
+      errorOnExist: true
+    }
   ).then(() => {
-    console.log(chalk.greenBright(`🚀download ${name} successfully!`))
-  }).catch(() => {
-    console.log(chalk.redBright(`download ${name} failed!`))
+    logger.success(`🚀download ${name} successfully!`)
+  }).catch((err) => {
+    logger.error(err)
   })
 }
