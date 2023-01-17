@@ -1,7 +1,7 @@
 {
   "name": "react-ts-template",
   "version": "1.0.0",
-  "description": "A template for react and typescript.",
+  "description": "A project template for react and typescript.",
   "scripts": {
     "dev": "npm run serve",
     "dev:open": "cross-env OPEN=true npm run dev",
