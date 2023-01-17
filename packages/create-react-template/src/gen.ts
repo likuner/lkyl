@@ -1,4 +1,5 @@
 import fse from 'fs-extra'
+import fs from 'fs'
 import path from 'path'
 import logger from './logger'
 
@@ -26,8 +27,26 @@ export const gen = (name: string) => {
       errorOnExist: true
     }
   ).then(() => {
-    logger.success(`🚀download ${name} successfully!`)
+    if (setPackageJson(dest, { name })) {
+      logger.success(`🚀download ${name} successfully!`)
+    }
   }).catch((err) => {
     logger.error(err)
   })
+}
+
+const setPackageJson = (dest: string, args: Record<string, any> = {}): boolean => {
+  try {
+    const packagePath = resolvePath(dest, 'package.json')
+    const settingData = fs.readFileSync(packagePath, 'utf-8') || '{}'
+    const settingJson = JSON.parse(settingData)
+    Object.entries(args).forEach(([key, value]) => {
+      settingJson[key] = value
+    })
+    fs.writeFileSync(packagePath, JSON.stringify(settingJson, null, 2), 'utf-8')
+    return true
+  } catch (err) {
+    logger.error(err as any)
+    return false
+  }
 }
