@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   return (
     <Space direction="vertical" size="middle" className={styles.container}>
       <Image src={logo} width={100} />
-      <Alert type="info" message={`${words.value}`} />
+      <Alert type="info" message={words.value} />
       <Input value={words.value} onChange={handleChange}/>
     </Space>
   )
