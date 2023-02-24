@@ -1,6 +1,6 @@
 {
   "name": "@likun./pubsub",
-  "version": "2.0.0-beta1",
+  "version": "2.0.0-beta2",
   "description": "🚀 A lib for publish-subscribe design pattern.",
   "keywords": [
     "pubsub",
@@ -11,9 +11,9 @@
   ],
   "type": "module",
   "exports": {
-    "import": "./dist/pubsub.esm.min.js",
-    "require": "./dist/pubsub.cjs.min.js",
-    "default": "./dist/pubsub.min.js"
+    "import": "./dist/index.esm.min.js",
+    "require": "./dist/index.cjs.min.js",
+    "default": "./dist/index.min.js"
   },
   "types": "./dist/index.d.ts",
   "unpkg": "./dist/index.browser.min.js",
