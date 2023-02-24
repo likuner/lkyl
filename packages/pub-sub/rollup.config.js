@@ -31,12 +31,12 @@ export default [
         ]
       },
       {
-        file: 'dist/index.browser.js',
+        file: 'dist/index.global.js',
         format: 'iife',
         name
       },
       {
-        file: 'dist/index.browser.min.js',
+        file: 'dist/index.global.min.js',
         format: 'iife',
         name,
         plugins: [

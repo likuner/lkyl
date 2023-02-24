@@ -1,6 +1,6 @@
 {
   "name": "@likun./pubsub",
-  "version": "2.0.0-beta2",
+  "version": "2.0.0",
   "description": "🚀 A lib for publish-subscribe design pattern.",
   "keywords": [
     "pubsub",
@@ -10,14 +10,10 @@
     "design pattern"
   ],
   "type": "module",
-  "exports": {
-    "import": "./dist/index.esm.min.js",
-    "require": "./dist/index.cjs.min.js",
-    "default": "./dist/index.min.js"
-  },
+  "main": "./dist/index.min.js",
+  "unpkg": "./dist/index.global.min.js",
+  "jsdelivr": "./dist/index.global.min.js",
   "types": "./dist/index.d.ts",
-  "unpkg": "./dist/index.browser.min.js",
-  "jsdelivr": "./dist/index.browser.min.js",
   "scripts": {
     "build": "rollup -c && gulp",
     "lint": "eslint ./src --ext .ts,.js",
