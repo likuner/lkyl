@@ -1,7 +1,7 @@
 {
   "name": "@likun./pubsub",
-  "version": "1.0.5",
-  "description": "🍉 A lib for publish-subscribe design pattern.",
+  "version": "2.0.0-beta1",
+  "description": "🚀 A lib for publish-subscribe design pattern.",
   "keywords": [
     "pubsub",
     "publish-subscribe",
@@ -9,11 +9,19 @@
     "emit",
     "design pattern"
   ],
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "./dist/pubsub.esm.min.js",
+    "require": "./dist/pubsub.cjs.min.js",
+    "default": "./dist/pubsub.min.js"
+  },
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/index.browser.min.js",
+  "jsdelivr": "./dist/index.browser.min.js",
   "scripts": {
-    "build": "webpack --env prod --config webpack.config.js --progress",
-    "build:test": "webpack --config webpack.config.js --progress"
+    "build": "rollup -c && gulp",
+    "lint": "eslint ./src --ext .ts,.js",
+    "lint:fix": "eslint ./src --ext .ts,.js --fix"
   },
   "repository": {
     "type": "git",
@@ -21,17 +29,30 @@
     "directory": "packages/pub-sub"
   },
   "homepage": "https://github.com/likuner/lkyl/tree/main/packages/pub-sub#readme",
-  "author": "Hunter",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "author": "Hunter",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16"
+  },
   "devDependencies": {
-    "terser-webpack-plugin": "^5.3.6",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.4",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "del": "^7.0.0",
+    "eslint": "^8.30.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "rollup": "^3.17.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-dts": "^5.2.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
   },
   "files": [
     "dist",

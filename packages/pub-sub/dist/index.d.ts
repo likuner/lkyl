@@ -10,3 +10,6 @@ export declare class PubSub {
     emit(event: EventType, ...args: any[]): void;
     clear(): void;
 }
+
+export declare function getValWithUnit(val: string | number): string;
+export declare function throttle(this: any, fn: Function, delay?: number, leading?: boolean): Function;
